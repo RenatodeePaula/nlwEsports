@@ -4,37 +4,26 @@
     box-sizing: border-box;
 }
 
-header {
-   
+header {   
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    height: calc(120px + 32px);
 
 }
 
 header div a {
    border-radius: 50%;
-   width: 128px;
-   
+   width: 128px;   
    padding: 4px;
    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
    
    display: flex;   
    justify-content: center;   
-   transition: transform .4s;
-
- 
-   
+   transition: transform .4s;   
 }
 
 header div a:hover {
     transform: scale(1.18);
-
 }
 
 header div img {
@@ -43,14 +32,12 @@ header div img {
 
     /* ANIMAÇÃO */
     animation: fromTop .7s .003s backwards;   
-
 }
-
 
 
 body * {
     font-family: 'Inter', sans-serif;
-    line-height: 160%;
+    line-height: 160%;    
 }
 
 body {
@@ -66,7 +53,6 @@ body {
 main {
     max-width: 580px;
     width: 90%;
-
     margin:auto;
     margin-top: 32px;
     display: grid;
@@ -77,7 +63,7 @@ section {
     color: white;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding-top: 4px;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 section ul {
@@ -91,7 +77,7 @@ section ul {
 section div {
     background-color: #2A2634;
     padding: 24px 32px 32px 32px ;
-    border-radius: 8px;
+    border-radius: 8px;    
 }
 
 
@@ -99,8 +85,8 @@ section h2 {
     letter-spacing: -0.47px;
 }
 
-section ul li {
-    transition: transform .4s;
+section ul li{
+    transition: transform .4s;   
 }
 
 section ul li:hover {
@@ -110,7 +96,6 @@ section ul li:hover {
 
 section p {
     letter-spacing: -0.18px;
-
     color: #A1A1AA;
 }
 
@@ -137,7 +122,7 @@ header div a {
 
 
 main section {
-    animation: fromBottom .7s backwards;
+    animation: fromSide .7s backwards;
 }
 
 main section:nth-child(1) {
@@ -166,7 +151,7 @@ main section:nth-child(3) {
     }
 }
 
-@keyframes fromBottom {
+@keyframes fromSide{
     from  {
         opacity: 0;
         transform: translateX(30px)
@@ -175,6 +160,5 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateX(0 );
     }
-
 }
 
